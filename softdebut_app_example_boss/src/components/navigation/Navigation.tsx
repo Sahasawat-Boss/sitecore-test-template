@@ -127,6 +127,7 @@ export const Default = ({ params, fields }: NavigationProps) => {
             <ul className="clearfix">{navigationItems}</ul>
           </nav>
         </div>
+        test nav
       </label>
     </div>
   );
