@@ -30,7 +30,7 @@ const PromoContent = (props: PromoContentProps): JSX.Element => {
 
   const Wrapper = ({ children }: { children: JSX.Element }): JSX.Element => (
     <div className={`component promo ${styles}`} id={id}>
-      <div className="component-content">{children}</div>
+      <div className="component-content hey">{children}</div>
     </div>
   );
 
@@ -45,7 +45,7 @@ const PromoContent = (props: PromoContentProps): JSX.Element => {
   return (
     <Wrapper>
       <>
-        <div className="field-promoicon">
+        <div className="">
           <ContentSdkImage field={fields.PromoIcon} />
         </div>
         <div className="promo-text">{renderText(fields)}</div>

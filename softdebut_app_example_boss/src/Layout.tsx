@@ -5,6 +5,7 @@ import SitecoreStyles from "components/content-sdk/SitecoreStyles";
 import { DesignLibraryApp } from "@sitecore-content-sdk/nextjs";
 import { AppPlaceholder } from "@sitecore-content-sdk/nextjs";
 import componentMap from ".sitecore/component-map";
+import Image from "next/image";
 
 interface LayoutProps {
   page: Page;
@@ -49,6 +50,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                 )}
               </div>
             </header>
+
             <main>
               <div id="content">
                 {route && (
@@ -73,6 +75,22 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                 )}
               </div>
             </footer>
+
+            {/* Test Image */}
+            <Image
+              src="/-/media/boss-test-folder/Sample-File-for-Upload/samplejpg.jpg"
+              alt="Test Sitecore Image"
+              width={300}
+              height={200}
+            />
+
+            {/* Test Image */}
+            <img
+              src="/-/media/boss-test-folder/Sample-File-for-Upload/samplejpg.jpg"
+              alt="Test Sitecore Image"
+              style={{ width: 300 }}
+            />
+            {/* Test Image */}
           </>
         )}
       </div>

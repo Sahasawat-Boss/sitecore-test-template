@@ -47,7 +47,7 @@ export const Banner: React.FC<ImageProps> = ({ params, fields }) => {
 
   return (
     <div className={`component hero-banner ${styles}`.trim()} id={id}>
-      <div className="component-content sc-sxa-image-hero-banner">
+      <div className="component-content sc-sxa-image-hero-banner hey">
         <ContentSdkImage
           field={imageField}
           loading="eager"

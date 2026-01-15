@@ -127,8 +127,9 @@ export const Default = ({ params, fields }: NavigationProps) => {
             <ul className="clearfix">{navigationItems}</ul>
           </nav>
         </div>
-        test nav
       </label>
+          <div className='text-red-500  hover:text-blue-400'>test tailwind</div>
     </div>
+
   );
 };
